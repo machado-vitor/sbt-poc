@@ -2,6 +2,7 @@ package example
 
 object Hello {
   def main(args: Array[String]): Unit = {
-    println("Hello")
+    val greeting = scala.io.Source.fromResource("greeting.txt").mkString
+    println(greeting)
   }
 }
